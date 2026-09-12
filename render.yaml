@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: tictactoe-online
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: ADMIN_KEY
+        sync: false
+      - key: DB_PATH
+        value: /tmp/tictactoe.db

@@ -1,0 +1,13 @@
+users.db
+admin_config.json
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.env
+.DS_Store
+node_modules/
